@@ -303,8 +303,8 @@
 			]
 			var num = 0; //加载进度
 			function loading() {
-				num++
-				load.innerHTML = '努力加载中：' + Math.floor(num / imgs.length) * 100 + '%'
+				num++;
+				load.innerHTML = '努力加载中：' + Math.floor(num / imgs.length * 100) + '%'
 				//缓存执行
 				if(num === imgs.length) {
 					load.style.display = 'none'
